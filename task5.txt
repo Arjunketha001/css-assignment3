@@ -1,0 +1,45 @@
+z-index is a CSS property that determines the stacking order of elements in the vertical (z-axis) direction.
+ It's like arranging elements in layers, with higher z-index values appearing above those with lower values.
+
+example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 2;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box1"></div>
+  <div class="box2"></div>
+
+</body>
+</html>
+
+In this example, we have two boxes (box1 and box2) positioned absolutely on the page.
+box1 has a higher z-index than box2 (2 vs. 1).
+As a result, box1 will appear above box2 because it's in a higher layer on the z-axis.
+You can think of z-index like layers in a stack. Higher values are on top of lower values.
+

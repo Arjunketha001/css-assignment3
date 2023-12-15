@@ -1,0 +1,12 @@
+
+Relative Positioning:
+
+Element stays in its normal position in the flow of the document.
+You can move it from that normal position using top, right, bottom, and left.
+Other elements are not affected by its movement.
+
+Absolute Positioning:
+
+Element is taken out of the normal flow.
+Positioned relative to its nearest positioned ancestor or the document body.
+Can overlap with other elements; it doesn't affect their layout, and they don't affect its position.
